@@ -13,6 +13,10 @@ public class SpringJenkinsApplication {
 	public String message() {
 		return "Wao!! Application Deployed successfully in SAP Cloud..";
 	}
+	@GetMapping("/ping2")
+	public String message2() {
+		return "Wao!! Application Deployed successfully in SAP Cloud..";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
